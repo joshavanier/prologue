@@ -2,7 +2,7 @@ import ProloguePlugin from "main";
 import { ItemView, MarkdownRenderer, TFile, WorkspaceLeaf } from "obsidian";
 
 export const PROLOGUE_VIEW_TYPE = "prologue-new-tab";
-export const PROLOGUE_CONTAINER_CLASS = "prologue-container";
+const PROLOGUE_CONTAINER_CLASS = "prologue-container";
 
 export class PrologueView extends ItemView {
   constructor(
