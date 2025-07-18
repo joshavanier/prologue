@@ -1,7 +1,7 @@
 {
-  "id": "obsidian-prologue",
+  "id": "prologue",
   "name": "Prologue",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "minAppVersion": "0.15.0",
   "description": "Display a random quote or reminder on the new tab page.",
   "author": "Josh Avanier",
