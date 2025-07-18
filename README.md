@@ -1,14 +1,16 @@
-**Prologue** is an Obsidian plugin that replaces the new tab page with one that shows a random selection from a designated repository of quotes, reminders, facts, or notes&mdash;of things you want to remind yourself of every now and then.
+![Obsidian MD](https://img.shields.io/badge/Obsidian-v1.8.10+-white)
 
-## installation
+![Prologue tab on Obsidian](screenshot.png)
 
-This plugin is yet to be published. To try it now, clone this repo into your vault's directory, under `./.obsidian/plugins`
+<dfn>Prologue</dfn> is an [Obsidian](https://obsidian.md) plugin that shows a random note, quote, or reminder each time you open a new tab.
+
+## install
+
+This plugin isn't on the community list yet. To try it, [download the latest release](https://github.com/joshavanier/prologue/releases) and unzip it into your vault’s `.obsidian/plugins` folder.
 
 ## setup
 
-You'll need to create a note titled *collection*. You may customise this to your liking in the plugin settings tab.
-
-In your *collection*, add your notes where each item is separated by a blank line. For example:
+A sample collection.md will be created in your vault. Add items separated by onr or more blank lines, like this:
 
 ```markdown
 
@@ -16,8 +18,14 @@ In your *collection*, add your notes where each item is separated by a blank lin
 
 Drink water.
 
-The Three Gates of Speech:
+The Three Gates of Speech
 1. Is it true?
 2. Is it necessary?
 3. Is it kind?
 ```
+
+You can change the collection file in the plugin settings.
+
+---
+
+[avanier](https://avanier.dev)
