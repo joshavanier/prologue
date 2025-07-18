@@ -3,12 +3,8 @@ import ProloguePlugin from "../main";
 
 export const PROLOGUE_DEFAULT_FILE = "collection.md";
 
-export interface ProloguePluginSettings {
-  file: string;
-}
-
-export const PROLOGUE_DEFAULT_SETTINGS: ProloguePluginSettings = {
-  file: "collection.md",
+export const PROLOGUE_DEFAULT_SETTINGS: { file: string } = {
+  file: PROLOGUE_DEFAULT_FILE,
 };
 
 export class PrologueSettingTab extends PluginSettingTab {
