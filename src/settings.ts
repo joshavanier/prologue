@@ -20,10 +20,8 @@ export class PrologueSettingTab extends PluginSettingTab {
     this.containerEl.createEl("h2", { text: "Prologue Settings" });
 
     new Setting(this.containerEl)
-      .setName("Prologue file")
-      .setDesc(
-        "Path to the file that houses your collection of quotes, reminders, notes to self, etc.",
-      )
+      .setName("Collection file")
+      .setDesc("Path to the note containing your quotes or reminders")
       .addText((text) => {
         text
           .setPlaceholder(PROLOGUE_DEFAULT_SETTINGS.file)
