@@ -11,8 +11,6 @@ export default class ProloguePlugin extends Plugin {
   styleID = "prologue-tab-override";
 
   async onload() {
-    this.injectStyle();
-
     Object.assign(this.settings, (await this.loadData()) ?? {});
     this.settings.file ||= PROLOGUE_DEFAULT_SETTINGS.file;
 
@@ -35,17 +33,6 @@ export default class ProloguePlugin extends Plugin {
 
   async saveSettings() {
     await this.saveData(this.settings);
-  }
-
-  injectStyle() {
-    if (document.getElementById(this.styleID)) return;
-    const style = Object.assign(document.createElement("style"), {
-      id: this.styleID,
-      textContent: `
-        .workspace-leaf-content[data-type="empty"] { display: none !important; }
-      `,
-    });
-    document.head.appendChild(style);
   }
 
   async loadSample() {

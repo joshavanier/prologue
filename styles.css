@@ -1,3 +1,7 @@
+.workspace-leaf-content[data-type="empty"] {
+  display: none;
+}
+
 .prologue-container {
   align-items: center;
   box-sizing: border-box;
