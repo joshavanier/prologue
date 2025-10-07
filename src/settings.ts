@@ -17,7 +17,6 @@ export class PrologueSettingTab extends PluginSettingTab {
 
   display() {
     this.containerEl.empty();
-    this.containerEl.createEl("h2", { text: "Prologue Settings" });
 
     new Setting(this.containerEl)
       .setName("Collection file")
